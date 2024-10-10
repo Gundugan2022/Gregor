@@ -165,7 +165,7 @@ export const getComments = async (slug) => {
 export const getCategoryPost = async (slug) => {
   const query = gql`
     query GetCategoryPost($slug: String!) {
-      postsConnection(where: {categories_some: {slug: $slug}}) {
+      postsConnection(where: {category_some: {slug: $slug}}) {
         edges {
           cursor
           node {
@@ -184,7 +184,7 @@ export const getCategoryPost = async (slug) => {
             featuredImage {
               url
             }
-            categories {
+            category {
               name
               slug
             }
@@ -201,7 +201,7 @@ export const getCategoryPost = async (slug) => {
 
 export const getFeaturedPosts = async () => {
   const query = gql`
-    query GetCategoryPost {
+    query GetCategoryPost() {
       posts(where: {featuredPost: true}) {
         author {
           name
