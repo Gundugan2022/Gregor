@@ -1,6 +1,5 @@
 import { PostCard, Categories, PostWidget} from '../components';
 import Head from 'next/head';
-import Link from 'next/link';
 import {getPosts} from '../services'
 import {FeaturedPosts} from '../sections'
 
@@ -11,7 +10,6 @@ export default function Home({posts}) {
     <div className="container mx-auto px-10 mb-8 ">
       <Head>
         <title>Gregor</title>
-        <Link rel="icon" href="/favicon.ico"/>
       </Head>
       <FeaturedPosts/>
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
