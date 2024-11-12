@@ -25,10 +25,10 @@ const Categories = () => {
           <div className='w-16 flex-none'>
             <img
               alt={category.name}
-              height='50px'
+              height='51px'
               className='align-middle rounded-full'
               src={category.photo.url}
-              width='50px'
+              width='51px'
             />
           </div>
           
