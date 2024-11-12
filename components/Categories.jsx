@@ -18,11 +18,27 @@ const Categories = () => {
         Categories
       </h3>
           {category.map((category) => (
+           
+
+          <div key={category.slug} className='flex items-center w-full mb-4'>
+
+          <div className='w-16 flex-none'>
+            <img
+              alt={category.name}
+              height='50px'
+              className='align-middle rounded-full'
+              src={category.photo.url}
+              width='50px'
+            />
+          </div>
+          
             <Link key={category.slug} href={`/category/${category.slug}`}>
-              <span className='cursor-pointer block pb-3 mb-3'>
+              <span className='cursor-pointer  pb-3 mb-3'>
                 {category.name}
               </span>
             </Link>
+          </div>
+
           ))}
       </div>
   )

@@ -128,6 +128,9 @@ export const getCategory = async () => {
       categories {
         name
         slug
+        photo {
+          url
+        }
       }
     }
   `
@@ -188,6 +191,9 @@ export const getCategoryPost = async (slug) => {
             category {
               name
               slug
+              photo {
+                url
+              }
             }
           }
         }
