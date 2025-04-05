@@ -11,6 +11,8 @@ class MyDocument extends Document {
       <Html>
         <Head>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
+
           {/* <meta name="viewport" content="width=device-width,minimum-scale=1, initial-scale=1" /> */}
         </Head>
         <body>
