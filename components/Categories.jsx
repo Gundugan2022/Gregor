@@ -26,7 +26,7 @@ const Categories = () => {
             <img
               alt={category.name}
               height='51px'
-              className='align-middle rounded-full'
+              className='align-middle h-[51px] w-[51px] object-cover rounded-full'
               src={category.photo.url}
               width='51px'
             />
